@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  ts-test:
+    name: TS Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: npm ci
+        run: |
+          npm ci
+      # - name: Run test
+      #   run: |
+      #     npm run test
+      - name: Run build
+        run: npm run build
