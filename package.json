@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.package.json",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "devDependencies": {
     "typescript": "~5.9.3",
