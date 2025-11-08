@@ -1,0 +1,7 @@
+services:
+  image-resize-niki-rust:
+    build: .
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true

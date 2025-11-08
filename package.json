@@ -13,9 +13,13 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@types/node": "^24.10.0",
     "typescript": "~5.9.3",
     "vite": "^7.1.7",
     "vitepress": "^1.6.4",
     "vitest": "^4.0.8"
+  },
+  "dependencies": {
+    "image-resize-niki-rust": "file:rust/pkg"
   }
 }

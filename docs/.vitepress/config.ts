@@ -1,9 +1,17 @@
 import { defineConfig } from "vitepress"
+import { fileURLToPath } from "url"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "image-resize-niki",
   description: "Resize image on web browser.",
+  vite: {
+    resolve: {
+      alias: {
+        "@lib": fileURLToPath(new URL("../../lib", import.meta.url)),
+      },
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
