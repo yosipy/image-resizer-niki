@@ -3,7 +3,7 @@ import { fileURLToPath } from "url"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "image-resize-niki",
+  title: "image-resizer-niki",
   description: "Resize image on web browser.",
   vite: {
     resolve: {
@@ -30,7 +30,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/yosipy/image-resize-niki" },
+      { icon: "github", link: "https://github.com/yosipy/image-resizer-niki" },
     ],
   },
 })

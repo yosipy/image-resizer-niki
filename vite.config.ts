@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
       outDir: "dist",
       lib: {
         entry: "lib/index.ts",
-        name: "image-resize-niki",
+        name: "image-resizer-niki",
         fileName: "index",
         formats: ["es", "umd"],
       },

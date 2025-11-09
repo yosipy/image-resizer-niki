@@ -1,5 +1,5 @@
 services:
-  image-resize-niki-rust:
+  image-resizer-niki-rust:
     build: .
     volumes:
       - .:/app

@@ -1,4 +1,4 @@
-import init, { resize_inside } from "image-resize-niki-rust"
+import init, { resize_inside } from "image-resizer-niki-rust"
 
 export { init }
 

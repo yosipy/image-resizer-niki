@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "image-resize-niki"
+  name: "image-resizer-niki"
   text: "Resize image on web browser."
   tagline: My great project tagline
   actions:

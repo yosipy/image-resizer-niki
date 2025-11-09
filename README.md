@@ -1,2 +1,3 @@
-# image-resize-niki
+# image-resizer-niki
+
 Resize image on web browser.
