@@ -1,4 +1,4 @@
-import init, { resize_inside } from "image-resizer-niki-rust"
+import init, { resize_inside, resize_cover } from "image-resizer-niki-rust"
 
 export { init }
 
@@ -63,6 +63,28 @@ export const resize = async (
 
   try {
     const outputCanvas = resize_inside(inputCanvas, width, height)
+
+    const resizedDataUrl = outputCanvas.toDataURL()
+
+    cleanupCanvas(inputCanvas)
+    cleanupCanvas(outputCanvas)
+
+    return resizedDataUrl
+  } catch (error) {
+    cleanupCanvas(inputCanvas)
+    throw error
+  }
+}
+
+export const resizeCover = async (
+  img: HTMLImageElement,
+  width?: number,
+  height?: number
+): Promise<string> => {
+  const inputCanvas = createCanvasFromImage(img)
+
+  try {
+    const outputCanvas = resize_cover(inputCanvas, width, height)
 
     const resizedDataUrl = outputCanvas.toDataURL()
 
